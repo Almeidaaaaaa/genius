@@ -6,6 +6,8 @@ const verde = document.getElementById('verde')
 const amarelo= document.getElementById('amarelo')
 const azul = document.getElementById('azul')
 const jogarMaquina = document.getElementById('jogarMaquina')
+const verificar = document.getElementById('verificar');
+
 
 //logica do jogo 
 
