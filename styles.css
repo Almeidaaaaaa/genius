@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(158, 252, 252);
+}
+#boxtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman';
+    font-size: 120px;
+}
+#boxGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#color{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+#vermelho{
+     background-color: #FF0000;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     height: 150px;
+     width: 150px;
+     border-start-start-radius: 75px;
+
+}
+#verde{
+    background-color: #228B22;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 150px;
+    width: 150px;
+    border-start-end-radius: 75px;
+}
+#azul{
+    background-color: #0000FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 150px;
+    width: 150px;
+    border-end-end-radius: 75px;
+}
+#amarelo{
+    background-color: #FFD700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 150px;
+    width: 150px;
+    border-end-start-radius: 75px;
+}
+
+.borda{
+    border: 2px solid black;
+    border-radius: 75px 75px 75px 75px;
+}
