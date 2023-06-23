@@ -1,14 +1,20 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 body{
-    background-color: rgb(158, 252, 252);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,121,136,1) 67%);
 }
 #boxtitle{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Times New Roman';
+    font-family: 'Kanit', sans-serif;
     font-size: 120px;
+    color: aliceblue;
+    height: 100px;
 }
 #boxGame{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,4 +57,82 @@ body{
 .borda{
     border: 2px solid black;
     border-radius: 75px 75px 75px 75px;
+}
+#botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#jogarMaquina{
+    margin-right: 20px;
+    border-radius: 3px;
+    border: none;
+    width: 100px;
+    height: 50px;  
+}
+#verificar{
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 2px;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
